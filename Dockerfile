@@ -1,6 +1,6 @@
 FROM debian:9-slim
 
-RUN apt-get update && apt-get install -y makepp python-virtualenv curl && \
+RUN apt-get update && apt-get install -y makepp python-virtualenv python-pip curl && \
     rm -rf /var/lib/apt/lists/*
 
 RUN pip install feedparser staticjinja pelican pelican_alias markdown pygal pillow beautifulsoup4 bs4 pysvg-py3 cssutils
